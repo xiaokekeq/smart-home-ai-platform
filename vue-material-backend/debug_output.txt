@@ -1,0 +1,45 @@
+﻿python : Traceback (most r
+ecent call last):
+所在位置 行:1 字符: 1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (T  
+  raceback (most recent   
+  call last)::String)     
+[], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  File "<string>", line 7,
+ in <module>
+  File "C:\Users\xiaoke\Ap
+pData\Roaming\Python\Pytho
+n312\site-packages\pydanti
+c\main.py", line 250, in _
+_init__
+    validated_self = self.
+__pydantic_validator__.val
+idate_python(data, self_in
+stance=self)
+                     ^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
+pydantic_core._pydantic_co
+re.ValidationError: 1 vali
+dation error for Dashboard
+Overview
+vehicle
+  Input should be a valid 
+dictionary or instance of 
+VehicleOverview [type=mode
+l_type, input_value=Vehicl
+eState(batteryPerce...True
+, trunkClosed=True)), inpu
+t_type=VehicleState]
+    For further informatio
+n visit https://errors.pyd
+antic.dev/2.12/v/model_typ
+e

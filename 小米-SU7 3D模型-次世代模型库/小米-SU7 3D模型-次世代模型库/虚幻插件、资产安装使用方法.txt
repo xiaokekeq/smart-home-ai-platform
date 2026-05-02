@@ -1,0 +1,27 @@
+插件安装方法：
+
+1.把Plugins目录放到项目文件目录中，这样安装就只有该项目才有插件
+
+2.把Plugins目录内的文件放到引擎的插件目录下：
+   盘符:\Program Files\Epic Games\UE_5.1\Engine\Plugins\
+     
+
+
+蓝图资源安装：
+
+把Content目录下的内容放到你项目工程里的Content目录下覆盖。
+
+路径不能有任何，不可在资源管理器修改，否则会出现路径丢失，只能在虚幻内容浏览器修改。
+
+
+
+百度搜索：次世代模型库   www.nextmodel.cn
+公众号：次世代模型库
+次世代模型库：https://www.nextmodel.cn/       专业的虚幻、Unity、Godot游戏引擎\Maya\Blender\FBX -3D模型库
+
+
+百度搜索：创造趣味网
+https://www.interestcreator.com   独立游戏开发者_一站式素材资源库
+
+创造趣味QQ群聊：780743001  加群验证：  创造趣味
+

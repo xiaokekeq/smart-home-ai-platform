@@ -1,0 +1,5 @@
+# .gitignore - 保护你的密钥，防止意外提交
+.env
+__pycache__/
+*.pyc
+.idea/

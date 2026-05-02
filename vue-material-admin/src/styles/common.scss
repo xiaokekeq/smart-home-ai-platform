@@ -1,0 +1,149 @@
+.d-flex {
+    align-items: center;
+}
+
+.jsb {
+    justify-content: space-between;
+}
+
+.arphl {
+    background-color: #ddffe9;
+}
+.NeuralBg, .silk-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    .silk-canvas {
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+.v-field__outline {
+    color: rgba(var(--v-theme-on-surface), var(--v-border-opacity));
+    --v-field-border-opacity: 1 !important;
+}
+.v-navigation-drawer .v-list {
+    position: relative;
+    left: -1px;
+}
+.apexcharts-svg {
+    background-color: transparent !important;
+}
+.text-h7 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.v-card {
+    border-radius: 6px;
+}
+.shadowCard {
+    .v-card {
+        box-shadow: rgba(146, 158, 171, 0.302) 0 0 2px,rgba(145, 158, 171, 0.122) 0 12px 24px -4px;
+        &.elevation-0 {
+            box-shadow: none;
+        }
+    }
+    .layout_navigation {
+        box-shadow: rgba(146, 158, 171, 0.302) 0 0 2px,rgba(145, 158, 171, 0.122) 0 12px 24px -4px;
+        &.elevation-0 {
+            box-shadow: none;
+        }
+    }
+}
+
+.v-menu > .v-overlay__content > .v-card, .v-menu > .v-overlay__content > .v-sheet, .v-menu > .v-overlay__content > .v-list {
+    border-radius: 6px !important;
+    box-shadow: rgba(146, 158, 171, 0.302) 0 0 2px,rgba(145, 158, 171, 0.122) 0 12px 24px -4px !important;
+}
+.borderCard {
+    .v-card {
+        box-shadow: none;
+        border: 1px solid rgba(var(--v-theme-on-surface), var(--v-border-opacity));
+        box-sizing: content-box;
+        &.elevation-0 {
+            border: 0;
+        }
+    }
+    .layout_navigation {
+        box-shadow: none;
+        border: 1px solid rgba(var(--v-theme-on-surface), var(--v-border-opacity));
+        border-right-width: 1px !important;
+    }
+}
+
+.glassCard {
+    .layout_navigation {
+        box-shadow: none;
+        background: none !important;
+        .liquid_glass {
+            height: calc(100vh - 2rem) !important;
+        }
+    }
+    .v-table {
+        background: none;
+    }
+    .v-list {
+        background: none;
+    }
+}
+.v-overlay__content {
+    .v-list {
+        background: none;
+    }
+}
+.v-theme--dark.border_ {
+    .v-card {
+        box-shadow: none;
+        border: 0;
+    }
+}
+
+.liquid_glass {
+    opacity: 1;
+    background: light-dark(hsl(0 0% 100% / var(--frost, 0)), hsl(0 0% 0% / var(--frost, 0))) !important;
+    box-shadow:
+        /* 第一组：内部阴影 (inset) */
+        0 0 2px 1px
+            light-dark(
+                /* 浅色模式下：将 canvasText 混合 95% 的透明色 */
+                color-mix(in oklch, canvasText, #0000 95%),
+                /* 深色模式下：将 canvasText 混合 97% 的透明色 */
+                color-mix(in oklch, canvasText, #0000 97%)
+            )
+            inset,
+
+        /* 第二组：内部阴影 (inset) */
+        0 0 10px 4px
+            light-dark(
+                /* 浅色模式下：混合 97% 的透明色 */
+                color-mix(in oklch, canvasText, #0000 97%),
+                /* 深色模式下：混合 98% 的透明色 */
+                color-mix(in oklch, canvasText, #0000 98%)
+            )
+            inset,
+
+        /* 第三组：外部阴影 (External Shadows) */
+        /* 将所有透明度调整为 0.0005 (比 0.0001 深，比 0.001 浅) */
+        0px 4px 16px rgba(17, 17, 26, 0.0005),
+        0px 8px 24px rgba(17, 17, 26, 0.0005),
+        0px 16px 56px rgba(17, 17, 26, 0.0005),
+        
+        /* 第四组：内部阴影 (Inset Shadows) */
+        /* 将所有透明度调整为 0.0005 */
+        0px 4px 16px rgba(17, 17, 26, 0.0005) inset,
+        0px 8px 24px rgba(17, 17, 26, 0.0005) inset,
+        0px 16px 56px rgba(17, 17, 26, 0.0005) inset !important;
+    position: relative;
+    .filter {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        color: rgba(211, 211, 211, 0.001);
+    }
+}
